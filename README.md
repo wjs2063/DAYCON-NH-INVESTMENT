@@ -172,3 +172,11 @@ TP	학습구분	trn	"trn: 학습 구분
 - FEATURE IMPORTANCE 를 이용해 몇가지 특징들은 제외
 - hyper parameter tuning (리소스 한계로 인해 GRID SEARCH 는 불가능했고 중요 변수인 max_depth,learning_rate,iteration,reg_alpha,reg_lambda 를 우선적으로 튜닝하였음
 - 
+
+
+
+
+
+### Gradient Boosting
+
+#### 대부분 회귀문제에서는 loss function 으로 mse 를 사용 -> negative gradient = residual(잔차) 가 된다. A 모델로 예측후 잔차를 계산하고  그 잔차를 정답으로 B모델을 훈련, 그리고 또 잔차를 계산하여 C모델을훈련 등등 으로 여러 모델을 결합하여 예측
