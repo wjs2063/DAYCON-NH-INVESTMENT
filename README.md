@@ -180,3 +180,9 @@ TP	학습구분	trn	"trn: 학습 구분
 ### Gradient Boosting
 
 #### 대부분 회귀문제에서는 loss function 으로 mse 를 사용 -> negative gradient = residual(잔차) 가 된다. A 모델로 예측후 잔차를 계산하고  그 잔차를 정답으로 B모델을 훈련, 그리고 또 잔차를 계산하여 C모델을훈련 등등 으로 여러 모델을 결합하여 예측
+
+
+#### Ensemble:
+1. Voting: 서로 다른 종류의 모델의 예측을 결합하여 최종값 결정 ( 제일 많이나온값을 택하거나 확률값들의 평균이 제일 높은것을 택하거나 등등 )
+2. bagging: 동일 알고리즘의 모델을 여러개사용 but 데이터 샘플링을 다르게 
+3. gradient boosting: 잔차를 학습
